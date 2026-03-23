@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ndumezulu Ngwenya - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js" defer></script>
+</head>
+<body id="home">
+    
+    <nav>
+        <div class="profile_name">
+            Ndumezulu Ngwenya
+            <div class="contact_info">
+                📧 ndumezulu.ngwenya@outlook.com
+            </div>
+            <div class="contact_info">
+                📞 +27 65 917 0134
+            </div>
+        </div>
+        <div class="topmenu-container">
+            <a class="topmenu" href="#about-me">About Me</a>
+            <a class="topmenu" href="#skills">Skills</a>
+            <a class="topmenu" href="#projects">Projects</a>
+            <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+    </nav>
+
+    <section id="about-me" class="container">
+        <img src="1714075351865.jfif" class="profile_image" alt="Profile"/>
+        <div class="about-text">
+            <h1>Hi, I'm Ndumezulu! 👋</h1>
+            <p>
+                I am a final-year <strong>BSc Computing</strong> student at UNISA with a <strong>78% academic average</strong>. 
+                Currently, I am expanding my technical expertise through the <strong>System Integration</strong> programme at WeThinkCode 
+                and the <strong>SAP To Employ</strong> programme at Umuzi. I am passionate about bridging the gap between 
+                complex backend systems and efficient business solutions.
+            </p>
+        </div>
+    </section>
+              
+    <section id="skills" class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" width="40"/>
+                <h6>Web Dev</h6>
+                <p>HTML, CSS, JS</p>
+            </div>  
+            <div class="skill-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++" width="40"/>
+                <h6>C++/C#</h6>
+                <p>Advanced Logic</p>
+            </div>  
+            <div class="skill-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" width="40"/>
+                <h6>Python/R</h6>
+                <p>Data Analysis</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png" alt="SQL" width="40"/>
+                <h6>SQL</h6>
+                <p>Database Design</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968407.png" alt="SAP" width="40"/>
+                <h6>SAP</h6>
+                <p>Enterprise Tech</p>
+            </div>
+        </div>
+    </section>
+          
+    <section id="projects" class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Advanced Systems Development (UNISA)</h3>
+                <ul>
+                    <li>Achieved <strong>86% (Distinction)</strong> in designing and implementing complex database-driven systems and visual programming interfaces.</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>System Integration (WeThinkCode)</h3>
+                <ul>
+                    <li>Developing proficiency in Linux environments and high-performance cluster computing to manage integrated software ecosystems.</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>High-Performance Computing (CSIR)</h3>
+                <ul>
+                    <li>Finalist/Competitor in designing computer clusters and mastering Linux command-line tools for heavy data processing.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="recommendations" class="container">
+        <h2 class="section-title">Recommendations</h2>
+        <div class="recommendations-grid" id="all_recommendations">
+            <div class="recommendation">
+                <span>&#8220;</span>
+                Ndumezulu is a standout student with an exceptional grasp of Data Structures and Database Design. His 78% average reflects a consistent commitment to technical excellence.
+                <span>&#8221;</span>
+            </div>
+            <div class="recommendation">
+                <span>&#8220;</span>
+                During our time at WeThinkCode, Ndumezulu demonstrated a unique ability to integrate complex systems quickly. He is a focused, high-performing asset to any technical team.
+                <span>&#8221;</span>
+            </div>
+            <div class="recommendation">
+                <span>&#8220;</span>
+                A brilliant problem solver. His background in both C++ and SAP makes him a versatile developer who understands both the code and the business logic behind it.
+                <span>&#8221;</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="container form-section">
+        <h3>Leave a Recommendation</h3>
+        <input type="text" id="new_name" placeholder="Name (Optional)">
+        <textarea id="new_recommendation" placeholder="Message"></textarea>
+        <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+    </section>
+
+    <a href="#home" class="home-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" width="30px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
+        </svg>
+    </a>
+
+    <div class="popup" id="popup">
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Success" width="50"/>
+        <h3>Thanks for leaving a recommendation!</h3>
+        <button onclick="showPopup(false)">Ok</button>
+    </div>
+</body>
+</html>
